@@ -27,6 +27,10 @@ mongoose
   )
   .catch((err) => console.log(err));
 
+app.get('/', (req, res)=>{
+  res.send("welcome to blogging platform");
+})
+
   app.use("/", route);
 
   app.listen(process.env.PORT || 3000, function () {
